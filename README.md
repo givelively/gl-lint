@@ -49,3 +49,13 @@ Alternatively, if your project doesn't have JavaScript, add `linters: ['rubocop'
 GLLint.call_cli(app_root: File.expand_path('..', __dir__),
                 linters: ['rubocop'])
 ```
+
+## Publishing gem to rubygems!
+
+[Build the gem](http://guides.rubygems.org/make-your-own-gem/)
+
+    gem build gl_lint.gemspec
+
+[Push to rubygems](http://guides.rubygems.org/publishing/)
+
+    gem push gl_lint-0.2.0.gem
